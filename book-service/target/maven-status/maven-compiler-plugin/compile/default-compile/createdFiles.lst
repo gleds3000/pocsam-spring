@@ -1,0 +1,6 @@
+bookapp/controller/PingController.class
+bookapp/controller/BookController.class
+bookapp/StreamLambdaHandler.class
+bookapp/Application.class
+bookapp/controller/Book.class
+bookapp/Application$1.class
