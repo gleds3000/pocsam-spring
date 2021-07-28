@@ -1,5 +1,27 @@
 # pocsam-spring
 
+AWS 
+
+# Criar Bucket
+aws s3 mb s3://poclambdajavaspring
+
+
+
+# Criar Pacote + Upload S3 
+aws cloudformation package --template-file sam.yaml --output-template-file output-sam.yaml --s3-bucket poclambdajavaspring
+
+
+# Deploy
+aws cloudformation deploy --template-file output-sam.yaml --stack-name apiLivros --capabilities CAPABILITY_IAM
+
+
+# Listar 
+aws cloudformation list-stack-resources --stack-name apiLivros
+
+# Excluir
+aws cloudformation delete-stack --stack-name apiLivros
+
+
 
 </br></br>
 <h2>💻 Status [:rocket:] 💻</h2>
